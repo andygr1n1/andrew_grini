@@ -66,4 +66,5 @@ export const NavBlock = styled.div`
 
 export const MenuItem = styled.div`
   padding: 5px 10px;
+   color: #282c35;
 `
