@@ -3,6 +3,8 @@ import styled, {css} from 'styled-components';
 import a1 from "../../images/a1.jpg"
 import a2 from "../../images/a2.jpg"
 import a3 from "../../images/a3.jpg"
+import a4 from "../../images/a4.png"
+import a5 from "../../images/a5.png"
 import {Caption} from "../../styles/UI/Caption";
 import {device} from "../../styles/MediaQueries/MediaQueries";
 
@@ -31,8 +33,9 @@ const AchievemntWall = styled.div`
 
 const ImgCertificate = styled.img`  
   width: 40%; 
-  margin: 20px 0;     
+  margin: 20px 5px;     
   cursor: pointer;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.80);
   
      @media ${device.tablet} {       
        max-width: 90%; 
@@ -79,7 +82,7 @@ const CloseBtn = styled.div`
 
 
 export const Achievements = () => {
-    const images = [a1, a2, a3];
+    const images = [a1, a2, a4, a5, a3];
     const [focusUrl, setFocusUrl] = useState('')
     const refOverlay = useRef(null)
     const refCloseBtn = useRef(null)
@@ -95,7 +98,7 @@ export const Achievements = () => {
     }
 
     return (
-        <AchievementsBlock>
+        <AchievementsBlock id="sectionCertificates">
             <Caption standart>#Certificates</Caption>
             <AchievemntWall>
                 {images.map(url => {

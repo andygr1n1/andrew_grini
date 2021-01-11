@@ -6,7 +6,7 @@ import GithubUniverse from "./GithubUniverse/GithubUniverse";
 
 const Projects = () => {
     return (
-            <ProjectsBlock>
+            <ProjectsBlock id="sectionProjects">
                 <ProjectsContent>
                     <Caption standart>#PROJECTS</Caption>
                 </ProjectsContent>

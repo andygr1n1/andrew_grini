@@ -57,7 +57,8 @@ h1, h2, h3 {
 p {
     font-family: inherit;
     font-size: inherit;
-    margin: 10px 0;
+    margin: 10px 10px;
+    font-weight: normal;
     }
     
 `

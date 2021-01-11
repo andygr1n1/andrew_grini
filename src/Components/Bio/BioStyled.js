@@ -80,3 +80,7 @@ export const TagsClosed = styled.span`
     content: " />";
   }
 `
+
+export const PassionAbout = styled.div`
+  margin-top: 40px;
+`
