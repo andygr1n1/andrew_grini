@@ -4,6 +4,7 @@ import bgImg from "../images/books-background.png"
 export const GlobalStyle = createGlobalStyle`
 html {
     box-sizing: border-box;
+    font-size: 16px;
     }
     
 *,
@@ -17,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    font-family: 'Roboto Condensed', 'Roboto', 'Oxygen',
+    font-family: 'Fira Code', 'Roboto Condensed', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -55,10 +56,10 @@ h1, h2, h3 {
 }
 
 p {
-    font-family: inherit;
-    font-size: inherit;
+    font-family: inherit;    
     margin: 10px 10px;
     font-weight: normal;
+    font-size: 1rem;
     }
     
 `

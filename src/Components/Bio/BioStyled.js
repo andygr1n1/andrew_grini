@@ -84,3 +84,11 @@ export const TagsClosed = styled.span`
 export const PassionAbout = styled.div`
   margin-top: 40px;
 `
+
+export const AboutMe = styled.div`
+  a {
+    cursor:pointer;
+    color: red;
+    font-weight: bolder;
+      }
+`

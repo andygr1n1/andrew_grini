@@ -1,9 +1,9 @@
 import React from 'react';
-import {BioBlock, BioDescription, BioParagraph, PassionAbout, Tags, TagsClosed} from "./BioStyled";
+import {Link} from 'react-scroll'
+import styled from 'styled-components';
+import cv from "../../docs/in.pdf"
+import {BioBlock, BioDescription, BioParagraph, Tags, TagsClosed, AboutMe} from "./BioStyled";
 import {Caption} from "../../styles/UI/Caption";
-import {ReactLogo} from "../../styles/UI/Icons/ReactLogo";
-import {BootstrapLogo, Html5Logo, JqueryLogo, JsEs6Logo, JsLogo, SassLogo} from "../../styles/UI/Icons/Icons";
-
 
 const Bio = () => {
     return (
@@ -11,37 +11,29 @@ const Bio = () => {
             <Caption standart>#BIO</Caption>
             <BioDescription>
                 <BioParagraph><Tags>name</Tags> Andrew <TagsClosed>name </TagsClosed></BioParagraph>
-                <BioParagraph><Tags>slogan</Tags> First, solve the problem. Then, write the
-                    code. <TagsClosed>slogan</TagsClosed></BioParagraph>
-                <BioParagraph><Tags>carrier</Tags> Front-end Developer <TagsClosed>carrier </TagsClosed></BioParagraph>
-                <BioParagraph><Tags>progress</Tags>
-                    <Html5Logo/> ⇛ <JsLogo/> ⇛ <JqueryLogo/> | <BootstrapLogo/> | <SassLogo/> ⇛ <JsEs6Logo/> ⇛ <ReactLogo
-                        ReactBio/> <TagsClosed>progress </TagsClosed></BioParagraph>
-                <BioParagraph><Tags>aux</Tags> Git | WebPack | NodeMailer | Firebase | Trello | Sigma | Adobe XD |
-                    Photoshop | Illustrator | etc... <TagsClosed>aux </TagsClosed>
+                <BioParagraph>
+                    <Tags>slogan</Tags>
+                    First, solve the problem. Then, write the code
+                    <TagsClosed>slogan</TagsClosed>
                 </BioParagraph>
-                {/*<PassionAbout>*/}
-                {/*    <p> Hello, my name is Andrew and I like codding.</p>*/}
-                {/*    <p>Now I am focused on Front-end development.</p>*/}
-                {/*    <p> I'd like to get a job in respectful organization, that's why I train my skills constantly.</p>*/}
-                {/*    <p>I'm good in JavaScript and I am junior in React.</p>*/}
-                {/*    <p>In 2014 I built simple sites on HTML5 and CSS3 with simple JS involving, praticed Joomla and*/}
-                {/*        Wordpress. It was more like a hobby, but with small commercial success.*/}
-                {/*    </p>*/}
-
-                {/*    <p>In 2019 I decided to make Front-end development my profession. I studied hard and as a result I*/}
-                {/*        can*/}
-                {/*        create projects using JavaScript ES6 and React library.*/}
-                {/*        I don't want to stop and continue my education at free time. Now I'm interested in React,*/}
-                {/*        Angular*/}
-                {/*        and Node JS.</p>*/}
-
-                {/*    <p> I am Junior React developer. I am focused on this library, because it gives great*/}
-                {/*        possibilities*/}
-                {/*        in creating difficult web and mobile apps, it is very flexible and can be used with other*/}
-                {/*        libraries*/}
-                {/*        and frameworks.</p>*/}
-                {/*</PassionAbout>*/}
+                <AboutMe>
+                    <p>Hello, Thank you for visiting this page</p>
+                    <p>I'm Enthusiastic web developer, eager to contribute for success through hard work, attention
+                        to details and excellent organizational skills. Understand OOP principles and functional programming
+                        in Java Script. I'm highly motivated to learn, grow and excel in web development
+                    </p>
+                    <p>Today I'm focused in React development. More info about this you can find in my <a href={cv} download>CV</a></p>
+                    <p>Welcome for exploring in my project <Link to="sectionProjects"
+                                                                 activeClass="active"
+                                                                 spy={true}
+                                                                 smooth={true}
+                                                                 offset={0}
+                                                                 duration={500}
+                    >
+                        library
+                    </Link>
+                    </p>
+                </AboutMe>
             </BioDescription>
         </BioBlock>
     )

@@ -6,7 +6,6 @@ import Footer from "./Components/Footer/Footer";
 import Bio from "./Components/Bio/Bio";
 import {Achievements} from "./Components/Achievements/Achievements";
 import TitanPanel from "./Components/TitanPanel/TitanPanel";
-
 function App() {
   return (
       <>
