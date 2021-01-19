@@ -3,6 +3,7 @@ import {device} from "../../styles/MediaQueries/MediaQueries";
 
 export const HeaderBlock = styled.header`    
   background-color: #282c34;
+  padding-top: 60px;
 `
 
 export const HeaderContent = styled.div`

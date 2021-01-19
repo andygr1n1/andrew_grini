@@ -64,7 +64,6 @@ const Header = () => {
                         <NavBlock downloadBtn>
                             <Button><a href={docPortfolio} download>Download CV</a></Button>
                         </NavBlock>
-
                     </Nav>
                     <IntroBlock/>
                 </HeaderContent>
