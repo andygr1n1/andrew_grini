@@ -32,6 +32,10 @@ code {
     monospace;
 }
 
+section h1 {
+  font-size: 36px;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -57,9 +61,10 @@ h1, h2, h3 {
 
 p {
     font-family: inherit;    
-    margin: 10px 10px;
+    padding: 0.5rem 0;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.7em;
     }
     
 `

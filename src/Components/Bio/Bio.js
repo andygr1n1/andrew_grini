@@ -1,41 +1,44 @@
 import React from 'react';
-import {Link} from 'react-scroll'
-import styled from 'styled-components';
+import {Link} from "react-scroll";
 import cv from "../../docs/in.pdf"
-import {BioBlock, BioDescription, BioParagraph, Tags, TagsClosed, AboutMe} from "./BioStyled";
-import {Caption} from "../../styles/UI/Caption";
+import {BioSection, Intro} from "./BioStyled";
 
 const Bio = () => {
     return (
-        <BioBlock>
-            <Caption standart>#BIO</Caption>
-            <BioDescription>
-                <BioParagraph><Tags>name</Tags> Andrew <TagsClosed>name </TagsClosed></BioParagraph>
-                <BioParagraph>
-                    <Tags>slogan</Tags>
-                    First, solve the problem. Then, write the code
-                    <TagsClosed>slogan</TagsClosed>
-                </BioParagraph>
-                <AboutMe>
+        <BioSection>
+            <h1>#BIO</h1>
+                <Intro>
+                    <div>
+                        <span className="tag-open">name</span>
+                        <h3>Andrew</h3>
+                        <span className="tag-close">name </span>
+                    </div>
+                    <div>
+                        <span className="tag-open">slogan</span>
+                        <h3>First, solve the problem. Then, write the code</h3>
+                        <span className="tag-close">slogan</span>
+                    </div>
+                </ Intro>
+                <div>
                     <p>Hello, Thank you for visiting this page</p>
-                    <p>I'm Enthusiastic web developer, eager to contribute for success through hard work, attention
-                        to details and excellent organizational skills. Understand OOP principles and functional programming
-                        in Java Script. I'm highly motivated to learn, grow and excel in web development
+                    <p>My name is Andrew. I'm enthusiastic web developer, eager to contribute for success through hard work, attention
+                        to details and excellent organizational skills. I understand OOP principles and functional programming
+                        in Java Script.
                     </p>
-                    <p>Today I'm focused in React development. More info about this you can find in my <a href={cv} download>CV</a></p>
-                    <p>Welcome for exploring in my project <Link to="sectionProjects"
-                                                                 activeClass="active"
-                                                                 spy={true}
-                                                                 smooth={true}
-                                                                 offset={0}
-                                                                 duration={500}
+                    <p>Today I'm focused in React development. More info about this you can find in my <a href={cv}
+                                                                                                          download>CV</a>
+                    </p>
+                    <p>Welcome for exploring my project <Link to="sectionProjects"
+                                                              spy={true}
+                                                              smooth={true}
+                                                              offset={0}
+                                                              duration={500}
                     >
                         library
                     </Link>
                     </p>
-                </AboutMe>
-            </BioDescription>
-        </BioBlock>
+                </div>
+        </BioSection>
     )
 };
 
