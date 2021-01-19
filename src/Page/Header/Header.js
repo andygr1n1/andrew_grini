@@ -9,6 +9,7 @@ import {Link, animateScroll as scroll} from "react-scroll";
 import styled from "styled-components";
 import {ToTopButton} from "../../styles/UI/ToTopButton";
 import sun from "../../images/sun.png"
+import {SunEffects} from "../../Components/ParallaxEffects/ParallaxEffects";
 
 const MenuItem = styled.div`
   padding: 5px 10px;   
@@ -16,6 +17,7 @@ const MenuItem = styled.div`
   margin: 0 20px;
   color: #333;
   font-weight: bolder; 
+  z-index: 100;
 `
 
 
@@ -23,7 +25,7 @@ const Header = () => {
     return (
         <>
             <HeaderBlock>
-                <img className="sunny" src={sun} alt=""/>
+                <SunEffects link={sun} classname="sunny" />
                 <HeaderContent>
                     <Nav>
                         <NavBlock NavBlockMiniImg>

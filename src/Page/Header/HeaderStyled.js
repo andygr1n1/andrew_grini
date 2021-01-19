@@ -4,16 +4,6 @@ import {device} from "../../styles/MediaQueries/MediaQueries";
 export const HeaderBlock = styled.header`      
   padding-top: 60px;
   position: relative;
-  
-  .sunny {
-    position: absolute;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    top: -100%;
-    z-index: -10;
-  }
 `
 
 export const HeaderContent = styled.div`
