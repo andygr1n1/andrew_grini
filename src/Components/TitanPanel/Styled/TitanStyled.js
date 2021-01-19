@@ -15,6 +15,7 @@ export const Titan = styled.div`
   padding: 5px 20px;
   background: #262426;
   box-shadow: 1px 1px 1px 1px #333;  
+  z-index: 999;
    & * {
     display: flex;
     align-items: center;    
@@ -30,7 +31,7 @@ export const Titan = styled.div`
         background: none;
         outline: none;
         border: none;
-        color: red;
+        color: gold;
         &:hover {
          font-weight: bolder;
         }    

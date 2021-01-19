@@ -17,14 +17,14 @@ html {
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
     font-family: 'Fira Code', 'Roboto Condensed', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;  
-    background-image: url(${bgImg});
-    
+    //background-image: url(${bgImg});  
+   background: linear-gradient(180deg, rgb(42,188,227) 0%, rgba(38,200,254,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 code {
@@ -66,5 +66,4 @@ p {
     font-size: 1.3rem;
     line-height: 1.7em;
     }
-    
 `

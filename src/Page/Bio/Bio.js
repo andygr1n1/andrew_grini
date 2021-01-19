@@ -2,17 +2,17 @@ import React from 'react';
 import {Link} from "react-scroll";
 import cv from "../../docs/in.pdf"
 import {BioSection, Intro} from "./BioStyled";
+import {CloudEffect} from "../../Components/ParallaxEffects/CloudsEffect";
+import bigCloud from "../../images/cloud_big.png"
+import mediumCloud from "../../images/cloud_medium.png"
+import smallCloud from "../../images/cloud_small.png"
 
 const Bio = () => {
     return (
         <BioSection>
-            <h1>#BIO</h1>
+            <CloudEffect link={bigCloud} classname="big_cloud"/>
+
                 <Intro>
-                    <div>
-                        <span className="tag-open">name</span>
-                        <h3>Andrew</h3>
-                        <span className="tag-close">name </span>
-                    </div>
                     <div>
                         <span className="tag-open">slogan</span>
                         <h3>First, solve the problem. Then, write the code</h3>
@@ -20,6 +20,8 @@ const Bio = () => {
                     </div>
                 </ Intro>
                 <div>
+                    <CloudEffect link={mediumCloud} classname="medium_cloud"/>
+                    <CloudEffect link={smallCloud} classname="small_cloud"/>
                     <p>Hello, Thank you for visiting this page</p>
                     <p>My name is Andrew. I'm enthusiastic web developer, eager to contribute for success through hard work, attention
                         to details and excellent organizational skills. I understand OOP principles and functional programming

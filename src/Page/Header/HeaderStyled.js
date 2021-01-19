@@ -1,12 +1,23 @@
 import styled, {css} from "styled-components";
 import {device} from "../../styles/MediaQueries/MediaQueries";
 
-export const HeaderBlock = styled.header`    
-  background-color: #282c34;
+export const HeaderBlock = styled.header`      
   padding-top: 60px;
+  position: relative;
+  
+  .sunny {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top: -100%;
+    z-index: -10;
+  }
 `
 
 export const HeaderContent = styled.div`
+  z-index: 1;
   display: flex;
   flex-direction: column;
   padding: 10px 0;

@@ -8,15 +8,14 @@ import {BootstrapLogo, JqueryLogo, JsEs6Logo, JsLogo, SassLogo} from "../../styl
 import {Link, animateScroll as scroll} from "react-scroll";
 import styled from "styled-components";
 import {ToTopButton} from "../../styles/UI/ToTopButton";
+import sun from "../../images/sun.png"
 
 const MenuItem = styled.div`
   padding: 5px 10px;   
   cursor: pointer;
   margin: 0 20px;
-  
-  &:hover {
-    color: #f6c634;
-  }
+  color: #333;
+  font-weight: bolder; 
 `
 
 
@@ -24,6 +23,7 @@ const Header = () => {
     return (
         <>
             <HeaderBlock>
+                <img className="sunny" src={sun} alt=""/>
                 <HeaderContent>
                     <Nav>
                         <NavBlock NavBlockMiniImg>
