@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import {device} from "../../styles/MediaQueries/MediaQueries";
 
 export const BioSection = styled.section`
+position: relative;
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -15,7 +16,7 @@ export const BioSection = styled.section`
         
         a {
         cursor:pointer;
-        color: red;
+        color: gold;
         font-weight: bolder;
         }
   
@@ -39,7 +40,7 @@ export const Intro = styled.div`
             .tag-open {
             font-style: italic;
             font-size: 13px;
-            color: orangered;
+            color: gold;
             
                 &:before {
                 font-weight: bolder;
@@ -57,7 +58,7 @@ export const Intro = styled.div`
             .tag-close {
             font-style: italic;
             font-size: 13px;
-            color: orangered;
+            color: gold;
             
                 &:before {
                 font-weight: bolder;

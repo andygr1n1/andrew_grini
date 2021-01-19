@@ -12,6 +12,7 @@
     "react-inlinesvg": "^2.2.2",
     "react-scripts": "4.0.1",
     "react-scroll": "^1.8.1",
+    "react-scroll-parallax": "^2.3.5",
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },

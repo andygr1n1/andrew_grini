@@ -10,7 +10,7 @@ export const Caption = styled.div`
     }
   
   ${props => props.webDeveloper && css`
-    background: -webkit-linear-gradient(90deg,#ff8a00,#e52e71);
+    background: -webkit-linear-gradient(90deg,#ffd55e,#f6c03c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 `}
