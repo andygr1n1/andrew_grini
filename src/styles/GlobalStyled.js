@@ -24,7 +24,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;  
     //background-image: url(${bgImg});  
-   background: linear-gradient(180deg, rgb(42,188,227) 0%, rgba(38,200,254,1) 35%, rgba(0,212,255,1) 100%);
+   background: linear-gradient(180deg, rgb(42,188,227) 0%, rgb(38,254,222) 35%, rgb(174,255,255) 100%);
 }
 
 code {
