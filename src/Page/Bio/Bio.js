@@ -2,7 +2,8 @@ import React from 'react';
 import {Link} from "react-scroll";
 import cv from "../../docs/in.pdf"
 import {BioSection, Intro} from "./BioStyled";
-import {CloudEffect} from "../../Components/ParallaxEffects/CloudsEffect";
+import RellaxWrapper from 'react-rellax-wrapper'
+import {CloudEffects} from "../../Components/ParallaxEffects/ParallaxEffects";
 import bigCloud from "../../images/cloud_big.png"
 import mediumCloud from "../../images/cloud_medium.png"
 import smallCloud from "../../images/cloud_small.png"
@@ -10,7 +11,10 @@ import smallCloud from "../../images/cloud_small.png"
 const Bio = () => {
     return (
         <BioSection>
-            <CloudEffect link={bigCloud} classname="big_cloud"/>
+            {/*<CloudEffects link={bigCloud} classname="big_cloud"/>*/}
+            <RellaxWrapper speed={3}>
+                <img src={bigCloud} alt=""/>
+            </RellaxWrapper>
 
                 <Intro>
                     <div>
@@ -20,8 +24,8 @@ const Bio = () => {
                     </div>
                 </ Intro>
                 <div>
-                    <CloudEffect link={mediumCloud} classname="medium_cloud"/>
-                    <CloudEffect link={smallCloud} classname="small_cloud"/>
+                    <CloudEffects link={mediumCloud} classname="medium_cloud"/>
+                    <CloudEffects link={smallCloud} classname="small_cloud"/>
                     <p>Hello, Thank you for visiting this page</p>
                     <p>My name is Andrew. I'm enthusiastic web developer, eager to contribute for success through hard work, attention
                         to details and excellent organizational skills. I understand OOP principles and functional programming

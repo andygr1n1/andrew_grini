@@ -12,25 +12,18 @@ export const ReactLogoSpin = keyframes`
 `
 
 export const ReactLogo = styled.div`
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     pointer-events: none;
     display: block;
     mask-image: url(${reactLogoImg});
-    background: -webkit-linear-gradient(90deg,#ff8a00,#e52e71);    
+    background: -webkit-linear-gradient(90deg,#ff8a00,#fde384);    
     mask-repeat: space;
     mask-position: center;
     
     @media (prefers-reduced-motion: no-preference) {
         animation: ${ReactLogoSpin} infinite 20s linear;
-    }
-    
-        ${props => props.ReactBio && css`
-        background: -webkit-linear-gradient(90deg,#167fef,#0324d4);  
-        height: 70px;
-        width: 70px;                                         
-        }
-    `}
+    }  
     
     ${props => props.Reactfooter && css`
         @media ${device.tablet} {  

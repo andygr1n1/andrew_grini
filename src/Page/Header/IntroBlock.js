@@ -1,49 +1,63 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Caption} from "../../styles/UI/Caption";
 import {device} from "../../styles/MediaQueries/MediaQueries";
 
 
-const IntroBlockStyled = styled.div`
-  padding: 60px 0; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  
-    @media ${device.laptop} {
-      flex-direction: column;
-      justify-content: center;
+const PersonalData = styled.div`
+padding: 60px 0; 
+display: flex;
+justify-content: space-between;
+align-items: center; 
+    * {
+    cursor: pointer;
+    }    
+    
+    h1 {
+    background: -webkit-linear-gradient(90deg,#ffd55e,#f6c03c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     }
-`
-
-const MyName = styled.div`
-  margin-left: 15px;
-`
-
-const MeContacts = styled.div`
-  text-align: right;
-  
-  &&>div {
-    margin: 10px 0;    
-  }
-  
-    @media ${device.laptop} {
+        
+    .data__name {
+    margin-left: 15px;
+    }
+        
+    .data_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+        
+        a{
+        margin: 5px;
+        &:hover {
+        color: gold;
+        transition: color 0.3s;
+        }
+        }
+                                  
+        @media ${device.laptop} {
         text-align: left;
         margin: -10px 0 0 -45px;
+        }
+    }
+  
+@media ${device.laptop} {
+flex-direction: column;
+justify-content: center;
 }
 `
 
 export const IntroBlock = () => {
     return (
-        <IntroBlockStyled>
+        <PersonalData>
             <div>
-                <MyName>Andrew Grini</MyName>
-                <Caption webDeveloper>#WEB DEVELOPER</Caption>
+                <div className="data__name">Andrew Grini</div>
+                <h1>#WEB DEVELOPER</h1>
             </div>
-            <MeContacts>
-                <div>(373) 68 - 953 - 913</div>
-                <div>andy.grini@gmail.com</div>
-            </MeContacts>
-        </IntroBlockStyled>
+            <div className="data_contacts">
+                <a href="tel:37368953913">(373) 68 - 953 - 913</a>
+                <a href="mailto:andy.grini@gmail.com" target="_blank" rel="noreferrer">andy.grini@gmail.com</a>
+            </div>
+        </PersonalData>
     )
 }
