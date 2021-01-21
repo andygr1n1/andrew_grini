@@ -1,7 +1,8 @@
 import React from 'react';
 import {ReactLogo} from "../../styles/UI/Icons/ReactLogo";
-import {FooterBlock, FooterContent, AGlogo} from "./FooterStyled";
+import {FooterBlock, FooterContent} from "./FooterStyled";
 import {SocialNetwork} from "./SocialNetwork";
+import tree from "../../images/science-tree.png"
 
 
 
@@ -12,9 +13,9 @@ const Footer = () => {
             <FooterContent>
                 <SocialNetwork />
                 <ReactLogo Reactfooter />
-                <AGlogo>Andrew Grini DEV -  2021</AGlogo>
+                <div className="ag-dev-2021"><div className="animation">Andrew Grini DEV -  2021</div></div>
             </FooterContent>
-
+            <img className="tree" src={tree} alt=""/>
         </FooterBlock>
 
     )

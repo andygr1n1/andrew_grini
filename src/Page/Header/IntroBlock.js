@@ -7,15 +7,27 @@ const PersonalData = styled.div`
 padding: 60px 0; 
 display: flex;
 justify-content: space-between;
-align-items: center; 
+align-items: center;
+z-index: 1; 
+
+    @media ${device.laptop} {
+    flex-direction: column;
+    justify-content: center;
+    }
+
     * {
     cursor: pointer;
     }    
     
     h1 {
-    background: -webkit-linear-gradient(90deg,#ffd55e,#f6c03c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: gold;
+    text-shadow: 2px 1px 1px rgba(150, 150, 150, 1);
+    transition: color 0.4s ease-out;
+    
+      &:hover {
+         color: blueviolet;
+         transition: color 0.4s ease-out;
+      }
     }
         
     .data__name {
@@ -29,22 +41,20 @@ align-items: center;
         
         a{
         margin: 5px;
-        &:hover {
-        color: gold;
-        transition: color 0.3s;
-        }
+        transition: color 0.4s ease-out;
+        color: snow;
+            &:hover {
+            color: blueviolet;
+            font-weight: bolder;
+            transition: color 0.4s ease-out;
+            }
         }
                                   
         @media ${device.laptop} {
         text-align: left;
-        margin: -10px 0 0 -45px;
+        margin: -1px 0 0 -45px;
         }
     }
-  
-@media ${device.laptop} {
-flex-direction: column;
-justify-content: center;
-}
 `
 
 export const IntroBlock = () => {

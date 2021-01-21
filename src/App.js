@@ -1,25 +1,26 @@
 import React from "react";
-import {ParallaxProvider} from 'react-scroll-parallax';
 import {GlobalStyle} from "./styles/GlobalStyled";
 import Header from "./Page/Header/Header";
 import Projects from "./Page/Projects/Projects";
 import Footer from "./Page/Footer/Footer";
-import Bio from "./Page/Bio/Bio";
+import Summary from "./Page/Summary/Summary";
 import {Achievements} from "./Page/Achievements/Achievements";
 import TitanPanel from "./Components/TitanPanel/TitanPanel";
+import {ReactQuiz} from "./Page/ReactQuiz/ReactQuiz";
 
 function App() {
 
     return (
-        <ParallaxProvider>
+        <>
             <GlobalStyle/>
             <TitanPanel/>
             <Header/>
-            <Bio/>
+            <Summary/>
+            <ReactQuiz />
             <Projects/>
             <Achievements/>
             <Footer/>
-        </ParallaxProvider>
+        </>
 
     )
 }
