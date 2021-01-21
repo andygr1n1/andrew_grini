@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import fbLogo from "../../images/fb-logo-round.png";
 import inLogo from "../../images/in-logo.png";
 import githubLogo from "../../images/github-logo.png"
-import {MiniImg} from "../../styles/UI/MiniImg";
 import {device} from "../../styles/MediaQueries/MediaQueries";
 
 

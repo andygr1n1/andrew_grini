@@ -4,7 +4,7 @@ import {animateScroll as scroll} from "react-scroll";
 import {HeaderSection} from "./HeaderStyled";
 import {IntroBlock} from "./IntroBlock";
 
-import {ToTopButton} from "../../styles/UI/ToTopButton";
+import {ToTopButton} from "../../styles/ToTopButton";
 import docPortfolio from "../../docs/in.pdf"
 import sun from "../../images/sun.png"
 
