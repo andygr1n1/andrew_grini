@@ -15,6 +15,7 @@ const ToTop = styled.div`
   right: 30px;
   bottom: 25px;
   opacity: 0;
+  z-index: 1000;
   
   &:hover {
     color: #f6c634;    

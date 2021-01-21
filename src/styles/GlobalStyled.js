@@ -1,6 +1,4 @@
 import {createGlobalStyle} from "styled-components";
-import bgImg from "../images/books-background.png"
-
 export const GlobalStyle = createGlobalStyle`
 html {
     box-sizing: border-box;
@@ -23,8 +21,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;  
-    //background-image: url(${bgImg});  
-   background: linear-gradient(180deg, rgb(42,188,227) 0%, rgb(38,254,222) 35%, rgb(174,255,255) 100%);
+    background: linear-gradient(180deg, rgb(42,188,227) 0%, rgb(255,255,255) 10%, rgb(244,246,246) 50%, rgb(255,255,255) 100%);
 }
 
 code {
@@ -32,8 +29,11 @@ code {
     monospace;
 }
 
-section h1 {
-  font-size: 36px;
+section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 img {
@@ -59,11 +59,15 @@ h1, h2, h3 {
     margin: 0;    
 }
 
+h3 {
+   font-size: calc(14px + 10 * ((100vw - 320px) / 680));
+}
+
 p {
     font-family: inherit;    
     padding: 0.5rem 0;
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: calc(12px + 5 * ((100vw - 320px) / 680));
     line-height: 1.7em;
     }
 `

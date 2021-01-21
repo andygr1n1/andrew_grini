@@ -5,17 +5,25 @@ import a2 from "../../images/a2.jpg"
 import a3 from "../../images/a3.jpg"
 import a4 from "../../images/a4.png"
 import a5 from "../../images/a5.png"
-import {Caption} from "../../styles/UI/Caption";
 import {device} from "../../styles/MediaQueries/MediaQueries";
 
-const AchievementsBlock = styled.div`  
-  background: none;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;  
-  padding: 40px 0 20px;   
-`
+const AchievementsBlock = styled.section`  
+background: none;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;  
+padding: 40px 0 20px;
 
+    h1 {
+    font-size: 30px;
+    font-weight: bold;  
+        @media ${device.laptop} {        
+        text-align: center;                                     
+        }
+    }   
+  
+ 
+`
 const AchievemntWall = styled.div`
   overflow: hidden;
   display: flex;
@@ -30,7 +38,6 @@ const AchievemntWall = styled.div`
    }
   
 `
-
 const ImgCertificate = styled.img`  
   width: 40%; 
   margin: 20px 5px;     
@@ -50,7 +57,6 @@ const ImgCertificate = styled.img`
   width: auto; 
 ` }
 `
-
 const Overlay = styled.div`      
       position: fixed;      
       justify-content: center;
@@ -63,8 +69,6 @@ const Overlay = styled.div`
       z-index: 2;
       display: none;
 `;
-
-
 const CloseBtn = styled.div`   
   position: absolute;
   display: flex;
@@ -79,7 +83,6 @@ const CloseBtn = styled.div`
   color: snow;
   cursor: pointer
 `
-
 
 export const Achievements = () => {
     const images = [a1, a2, a4, a5, a3];
@@ -99,7 +102,7 @@ export const Achievements = () => {
 
     return (
         <AchievementsBlock id="sectionCertificates">
-            <Caption standart>#Certificates</Caption>
+            <h1>#Certificates</h1>
             <AchievemntWall>
                 {images.map(url => {
                     return <ImgCertificate key={url} onClick={() => {

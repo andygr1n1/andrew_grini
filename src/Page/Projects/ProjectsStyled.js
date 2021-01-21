@@ -27,6 +27,14 @@ export const ProjectsContent = styled.div`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  
+    h1 {
+    font-size: 30px;
+    font-weight: bold;  
+    @media ${device.laptop} {        
+    text-align: center;                                     
+    }
+    }   
 `
 
 export const ProjectBlock = styled.div`
